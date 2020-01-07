@@ -1,0 +1,29 @@
+@import "../sass/abstracts/mixin";
+@import "../sass/abstracts/variables";
+
+@import "../sass/base/animations";
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+@import "../sass/base/utilities";
+
+@import "../sass/components/input";
+@import "../sass/components/button";
+// @import "../sass/components/carousel";
+// @import "../sass/components/pagination";
+// @import "../sass/components/itemsFilter";
+// @import "../sass/components/renderItems";
+// @import "../sass/components/mobileFilter";
+// @import "../sass/components/sort";
+// @import "../sass/components/query";
+// @import "../sass/components/mobilePagination";
+// @import "../sass/components/loading";
+// @import "../sass/components/itemNavBar";
+
+// @import "../sass/layouts/itemHeader";
+// @import "../sass/layouts/grid";
+// @import "../sass/layouts/header";
+// @import "../sass/layouts/footer";
+
+@import "../sass/pages/loginPage";
+@import "../sass/pages/registerPage";
+// @import "../sass/pages/notFound";

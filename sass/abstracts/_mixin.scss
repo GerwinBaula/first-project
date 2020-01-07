@@ -1,0 +1,87 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media (max-width: 20em) {
+      @content;
+    } // 320px
+  }
+
+  @if $breakpoint == phone-medium {
+    @media (max-width: 23.4375em) {
+      @content;
+    } // 375px
+  }
+
+  @if $breakpoint == phone-large {
+    @media (max-width: 26.5625em) {
+      @content;
+    } // 425px
+  }
+
+  @if $breakpoint == minimum-width {
+    @media (max-width: 31.25em) {
+      @content;
+    } // 500px
+  }
+
+  @if $breakpoint == medium-width {
+    @media (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == maximum-width {
+    @media (max-width: 43.75em) {
+      @content;
+    } // 700px
+  }
+
+  @if $breakpoint == tablet {
+    @media (max-width: 48em) {
+      @content;
+    } // 768px
+  }
+
+  @if $breakpoint == laptop-small {
+    @media (max-width: 64em) {
+      @content;
+    } // 1024px
+  }
+
+  @if $breakpoint == laptop-large {
+    @media (min-width: 90em) {
+      @content;
+    } // 1440px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } // 1800px
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin row {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @include respond(laptop-small) {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  @include respond(tablet) {
+    padding: 0 4%;
+  }
+
+  @include respond(phone-large) {
+    padding: 0 5%;
+  }
+}

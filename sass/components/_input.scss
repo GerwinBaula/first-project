@@ -1,0 +1,32 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-bottom: 4rem;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 0.1rem solid black;
+
+  // padding-top: 1rem;
+  font-size: 1.8rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.u__animation--moveUp {
+  animation: moveUp 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.alert {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.form-text {
+  font-size: 1.8rem;
+}
